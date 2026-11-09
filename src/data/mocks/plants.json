@@ -1,0 +1,242 @@
+[
+  {
+    "id": "plt-monstera-01",
+    "commonName": "Monstera Deliciosa",
+    "scientificName": "Monstera deliciosa Liebm.",
+    "zone": "Sala de Estar (Zona A)",
+    "category": "Interior",
+    "photoUrl": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=600&q=80",
+    "description": "Planta tropical de interior conocida por sus grandes hojas acorazonadas y fenestradas. Requiere humedad constante sin encharcamiento y luz indirecta brillante.",
+    "sensorDevice": {
+      "id": "ESP32-NODE-01",
+      "name": "Sonda Sala Principal",
+      "type": "ESP32-WROOM + SHT31 + CapV1.2",
+      "battery": 92,
+      "batteryVoltage": 4.12,
+      "signalRssi": -58,
+      "firmwareVersion": "v2.5.0-iot",
+      "ipAddress": "192.168.1.140",
+      "macAddress": "94:B9:7E:6A:12:F1",
+      "lastSync": "2026-11-01T17:55:00Z",
+      "status": "online"
+    },
+    "thresholds": {
+      "soilMoisture": { "min": 45, "max": 75, "optimal": 62, "unit": "%" },
+      "temperature": { "min": 18, "max": 28, "optimal": 22.5, "unit": "°C" },
+      "lightLux": { "min": 2500, "max": 18000, "optimal": 8500, "unit": "lux" },
+      "humidity": { "min": 50, "max": 80, "optimal": 65, "unit": "%" }
+    },
+    "currentReadings": {
+      "soilMoisture": 58.6,
+      "temperature": 23.4,
+      "lightLux": 6840,
+      "humidity": 61.2,
+      "soilTemperature": 21.8,
+      "vpd": 1.08,
+      "lastReadingAt": "2026-11-01T17:55:00Z"
+    },
+    "health": {
+      "status": "optimal",
+      "score": 96,
+      "summary": "Parámetros óptimos en todos los sensores. Ciclo de transpiración activo."
+    },
+    "lastWatered": {
+      "timestamp": "2026-10-29T09:30:00Z",
+      "amountMl": 650,
+      "method": "Manual"
+    },
+    "nextRecommendedWatering": "2026-11-03T10:00:00Z"
+  },
+  {
+    "id": "plt-tomate-02",
+    "commonName": "Tomates Cherry Pera",
+    "scientificName": "Solanum lycopersicum var. cerasiforme",
+    "zone": "Invernadero Balcón (Zona B)",
+    "category": "Hortaliza",
+    "photoUrl": "https://images.unsplash.com/photo-1592841200221-a6898f307baa?auto=format&fit=crop&w=600&q=80",
+    "description": "Cultivo de fruto en maceta geotextil de 25L. Alta demanda hídrica en fase de floración/maduración y máxima exposición lumínica.",
+    "sensorDevice": {
+      "id": "ESP32-NODE-02",
+      "name": "Sonda Huerto Exterior",
+      "type": "ESP32-S3 + BME280 + Chirp-I2C",
+      "battery": 84,
+      "batteryVoltage": 3.96,
+      "signalRssi": -69,
+      "firmwareVersion": "v2.5.0-iot",
+      "ipAddress": "192.168.1.141",
+      "macAddress": "94:B9:7E:6A:12:F2",
+      "lastSync": "2026-11-01T17:54:12Z",
+      "status": "online"
+    },
+    "thresholds": {
+      "soilMoisture": { "min": 50, "max": 85, "optimal": 70, "unit": "%" },
+      "temperature": { "min": 16, "max": 32, "optimal": 24.0, "unit": "°C" },
+      "lightLux": { "min": 15000, "max": 65000, "optimal": 38000, "unit": "lux" },
+      "humidity": { "min": 40, "max": 75, "optimal": 55, "unit": "%" }
+    },
+    "currentReadings": {
+      "soilMoisture": 48.2,
+      "temperature": 27.1,
+      "lightLux": 42100,
+      "humidity": 44.5,
+      "soilTemperature": 24.6,
+      "vpd": 1.72,
+      "lastReadingAt": "2026-11-01T17:54:12Z"
+    },
+    "health": {
+      "status": "warning",
+      "score": 78,
+      "summary": "Humedad de tierra rozando el umbral mínimo por alta evapotranspiración solar."
+    },
+    "lastWatered": {
+      "timestamp": "2026-10-31T07:15:00Z",
+      "amountMl": 1200,
+      "method": "Riego por goteo automatizado"
+    },
+    "nextRecommendedWatering": "2026-11-01T19:00:00Z"
+  },
+  {
+    "id": "plt-albahaca-03",
+    "commonName": "Albahaca Genovesa",
+    "scientificName": "Ocimum basilicum",
+    "zone": "Ventanal Cocina (Zona C)",
+    "category": "Aromática",
+    "photoUrl": "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=600&q=80",
+    "description": "Hierba aromática mediterránea muy sensible al estrés por falta de agua. Muestra marchitamiento rápido si la tierra se deseca.",
+    "sensorDevice": {
+      "id": "ESP32-NODE-03",
+      "name": "Sonda Cocina Herbarium",
+      "type": "ESP8266 + DHT22 + CapacitiveV1.2",
+      "battery": 72,
+      "batteryVoltage": 3.82,
+      "signalRssi": -52,
+      "firmwareVersion": "v2.3.1-legacy",
+      "ipAddress": "192.168.1.142",
+      "macAddress": "94:B9:7E:6A:12:F3",
+      "lastSync": "2026-11-01T17:53:40Z",
+      "status": "online"
+    },
+    "thresholds": {
+      "soilMoisture": { "min": 45, "max": 80, "optimal": 68, "unit": "%" },
+      "temperature": { "min": 18, "max": 30, "optimal": 23.0, "unit": "°C" },
+      "lightLux": { "min": 8000, "max": 35000, "optimal": 18000, "unit": "lux" },
+      "humidity": { "min": 45, "max": 75, "optimal": 60, "unit": "%" }
+    },
+    "currentReadings": {
+      "soilMoisture": 34.2,
+      "temperature": 24.3,
+      "lightLux": 16200,
+      "humidity": 49.0,
+      "soilTemperature": 22.5,
+      "vpd": 1.45,
+      "lastReadingAt": "2026-11-01T17:53:40Z"
+    },
+    "health": {
+      "status": "critical",
+      "score": 52,
+      "summary": "Nivel de humedad crítico (34.2% frente al mínimo de 45%). Riego urgente requerido."
+    },
+    "lastWatered": {
+      "timestamp": "2026-10-30T18:00:00Z",
+      "amountMl": 350,
+      "method": "Manual"
+    },
+    "nextRecommendedWatering": "Inmediato"
+  },
+  {
+    "id": "plt-suculenta-04",
+    "commonName": "Echeveria Elegans",
+    "scientificName": "Echeveria elegans Rose",
+    "zone": "Terraza Soleada (Zona D)",
+    "category": "Suculenta",
+    "photoUrl": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80",
+    "description": "Suculenta xerófita mexicana con roseta compacta aterciopelada. Muy resistente a la sequía; el exceso de agua pudre las raíces.",
+    "sensorDevice": {
+      "id": "ESP32-NODE-04",
+      "name": "Sonda Rocalla Exterior",
+      "type": "ESP32-C3 + SHT40 + ResistiveGold",
+      "battery": 97,
+      "batteryVoltage": 4.19,
+      "signalRssi": -74,
+      "firmwareVersion": "v2.5.0-iot",
+      "ipAddress": "192.168.1.143",
+      "macAddress": "94:B9:7E:6A:12:F4",
+      "lastSync": "2026-11-01T17:55:20Z",
+      "status": "online"
+    },
+    "thresholds": {
+      "soilMoisture": { "min": 10, "max": 40, "optimal": 22, "unit": "%" },
+      "temperature": { "min": 10, "max": 35, "optimal": 22.0, "unit": "°C" },
+      "lightLux": { "min": 15000, "max": 75000, "optimal": 45000, "unit": "lux" },
+      "humidity": { "min": 25, "max": 60, "optimal": 40, "unit": "%" }
+    },
+    "currentReadings": {
+      "soilMoisture": 18.5,
+      "temperature": 25.8,
+      "lightLux": 48200,
+      "humidity": 38.0,
+      "soilTemperature": 26.1,
+      "vpd": 1.88,
+      "lastReadingAt": "2026-11-01T17:55:20Z"
+    },
+    "health": {
+      "status": "optimal",
+      "score": 98,
+      "summary": "Sustrato seco ideal para roseta crasulácea. Acumulación lumínica excelente."
+    },
+    "lastWatered": {
+      "timestamp": "2026-10-22T11:00:00Z",
+      "amountMl": 150,
+      "method": "Inmersión"
+    },
+    "nextRecommendedWatering": "2026-11-06T10:00:00Z"
+  },
+  {
+    "id": "plt-orquidea-05",
+    "commonName": "Orquídea Phalaenopsis",
+    "scientificName": "Phalaenopsis aphrodite",
+    "zone": "Estudio Zen (Zona E)",
+    "category": "Interior",
+    "photoUrl": "https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=600&q=80",
+    "description": "Orquídea epífita en maceta transparente de corteza de pino. Raíces fotosintéticas que prefieren alternar entre humedad y aireación.",
+    "sensorDevice": {
+      "id": "ESP32-NODE-05",
+      "name": "Sonda Estudio",
+      "type": "ESP32-WROOM + SHT31 + CapV1.2",
+      "battery": 64,
+      "batteryVoltage": 3.75,
+      "signalRssi": -62,
+      "firmwareVersion": "v2.5.0-iot",
+      "ipAddress": "192.168.1.144",
+      "macAddress": "94:B9:7E:6A:12:F5",
+      "lastSync": "2026-11-01T17:52:10Z",
+      "status": "online"
+    },
+    "thresholds": {
+      "soilMoisture": { "min": 30, "max": 65, "optimal": 48, "unit": "%" },
+      "temperature": { "min": 19, "max": 27, "optimal": 22.0, "unit": "°C" },
+      "lightLux": { "min": 3000, "max": 15000, "optimal": 7000, "unit": "lux" },
+      "humidity": { "min": 55, "max": 85, "optimal": 70, "unit": "%" }
+    },
+    "currentReadings": {
+      "soilMoisture": 44.0,
+      "temperature": 21.9,
+      "lightLux": 5400,
+      "humidity": 64.0,
+      "soilTemperature": 20.8,
+      "vpd": 0.92,
+      "lastReadingAt": "2026-11-01T17:52:10Z"
+    },
+    "health": {
+      "status": "optimal",
+      "score": 93,
+      "summary": "Corteza de pino con retención hídrica equilibrada. Floración activa."
+    },
+    "lastWatered": {
+      "timestamp": "2026-10-27T10:00:00Z",
+      "amountMl": 250,
+      "method": "Inmersión"
+    },
+    "nextRecommendedWatering": "2026-11-04T10:00:00Z"
+  }
+]

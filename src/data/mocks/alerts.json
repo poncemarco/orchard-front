@@ -1,0 +1,44 @@
+[
+  {
+    "id": "alt-001",
+    "plantId": "plt-albahaca-03",
+    "plantName": "Albahaca Genovesa",
+    "severity": "critical",
+    "metric": "moisture",
+    "title": "Déficit Hídrico Severo",
+    "message": "La humedad del sustrato ha caído al 34.2%, por debajo del umbral mínimo configurado (45%). Riesgo de daño celular por estrés hídrico.",
+    "currentValue": 34.2,
+    "thresholdValue": 45.0,
+    "unit": "%",
+    "timestamp": "2026-11-01T16:45:00Z",
+    "acknowledged": false
+  },
+  {
+    "id": "alt-002",
+    "plantId": "plt-tomate-02",
+    "plantName": "Tomates Cherry Pera",
+    "severity": "warning",
+    "metric": "moisture",
+    "title": "Humedad en Umbral de Advertencia",
+    "message": "Humedad actual en 48.2% (mínimo deseable 50%). Se recomienda activar riego preventivo antes del anochecer.",
+    "currentValue": 48.2,
+    "thresholdValue": 50.0,
+    "unit": "%",
+    "timestamp": "2026-11-01T17:10:00Z",
+    "acknowledged": false
+  },
+  {
+    "id": "alt-003",
+    "plantId": "plt-monstera-01",
+    "plantName": "Monstera Deliciosa",
+    "severity": "info",
+    "metric": "light",
+    "title": "Fotoperíodo diario completado",
+    "message": "La planta ha recibido 7.8 horas de luz difusa óptima (>5000 lux) hoy.",
+    "currentValue": 7.8,
+    "thresholdValue": 6.0,
+    "unit": "horas",
+    "timestamp": "2026-11-01T17:00:00Z",
+    "acknowledged": true
+  }
+]

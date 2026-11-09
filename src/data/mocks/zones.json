@@ -1,0 +1,50 @@
+[
+  {
+    "id": "zone-all",
+    "name": "Todas las Zonas",
+    "description": "Vista general de toda la huerta y plantas de interior",
+    "plantCount": 5,
+    "averageTemp": 24.1,
+    "averageMoisture": 40.7
+  },
+  {
+    "id": "zone-sala",
+    "name": "Sala de Estar",
+    "description": "Ambiente interior con luz indirecta controlada",
+    "plantCount": 1,
+    "averageTemp": 23.4,
+    "averageMoisture": 58.6
+  },
+  {
+    "id": "zone-balcon",
+    "name": "Invernadero Balcón",
+    "description": "Espacio semicubierto con alta insolación",
+    "plantCount": 1,
+    "averageTemp": 27.1,
+    "averageMoisture": 48.2
+  },
+  {
+    "id": "zone-cocina",
+    "name": "Ventanal Cocina",
+    "description": "Estación de hierbas aromáticas culinarias",
+    "plantCount": 1,
+    "averageTemp": 24.3,
+    "averageMoisture": 34.2
+  },
+  {
+    "id": "zone-terraza",
+    "name": "Terraza Soleada",
+    "description": "Exposición solar plena para xerófitas y cactáceas",
+    "plantCount": 1,
+    "averageTemp": 25.8,
+    "averageMoisture": 18.5
+  },
+  {
+    "id": "zone-estudio",
+    "name": "Estudio Zen",
+    "description": "Microclima templado para epífitas y orquídeas",
+    "plantCount": 1,
+    "averageTemp": 21.9,
+    "averageMoisture": 44.0
+  }
+]

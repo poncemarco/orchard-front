@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+import '../styles/dashboard.css';
+import { PlantDashboard } from '../components/dashboard/PlantDashboard';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<!-- SEO & Metadata -->
+		<title>VERDANT IoT — Monitoreo Biométrico de Plantas y Huerto</title>
+		<meta 
+			name="description" 
+			content="Dashboard en tiempo real para monitoreo de humedad de tierra, temperatura, radiación lumínica y telemetría de sensores IoT para plantas de interior y huerto." 
+		/>
+		<meta name="theme-color" content="#080d0a" />
+		<meta property="og:title" content="VERDANT IoT — Dashboard de Monitoreo de Plantas" />
+		<meta property="og:description" content="Control biométrico y ambiental para huerto: humedad de sustrato, radiación lumínica y temperatura en tiempo real." />
+		<meta property="og:type" content="website" />
+
+		<!-- Preconnect fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	</head>
+	<body>
+		<main id="main-content">
+			<PlantDashboard client:load />
+		</main>
+	</body>
+</html>

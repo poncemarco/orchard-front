@@ -2,6 +2,10 @@
 dist/
 # generated types
 .astro/
+# firebase
+.firebase/
+.firebaserc
+
 
 # dependencies
 node_modules/
